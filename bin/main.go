@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/docker/machine/libmachine/drivers/plugin"
-	"github.com/janeczku/docker-machine-vultr"
+	"github.com/bitmeal/docker-machine-vultr"
 )
 
 var Version string
