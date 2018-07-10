@@ -94,7 +94,7 @@ func (d *Driver) GetCreateFlags() []mcnflag.Flag {
 			Usage:  "Vultr operating system ID. Default: RancherOS.",
 			Value:  defaultOS,
 		},
-		mcnflag.IntFlag{
+		mcnflag.StringFlag{
 			EnvVar: "VULTR_APP",
 			Name:   "vultr-app-id",
 			Usage:  "Vultr App ID. When using Application OS(ID:186).",
