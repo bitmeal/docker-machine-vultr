@@ -4,9 +4,10 @@ go:
 
 git:
  submodules: true
- branches:
-  only:
-   - /^v\d\.\d*.\d*$/
+
+branches:
+ only:
+  - /^v\d\.\d*.\d*$/
 
 install:
  - curl -L https://github.com/tcnksm/ghr/releases/download/v0.10.1/ghr_v0.10.1_linux_amd64.tar.gz > ghr.tra.gz && tar -zxf && ghr.tar.gz && cd ghr_v* && export PATH=$PATH:$(pwd)/
