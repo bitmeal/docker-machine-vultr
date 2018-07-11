@@ -8,11 +8,10 @@ git:
 branches:
  only:
   - /^v\d\.\d*.\d*$/
-  - master
 
 install:
  - curl -L https://github.com/tcnksm/ghr/releases/download/v0.10.1/ghr_v0.10.1_linux_amd64.tar.gz > ghr.tar.gz && tar -zxf ghr.tar.gz && mv ghr_v*/ ghr_travis_local/ && export PATH=$PATH:$(pwd)/ghr_travis_local/
  
 script:
- - go build && make dist
+ - go build && make release
  
